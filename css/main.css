@@ -177,12 +177,12 @@ a:focus {
     color: #fff;
     text-shadow: black 2px 2px 10px;
     background: url(../img/header.jpg) no-repeat bottom center scroll;
-    background-position: center -100px;
-    background-color: #000000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-position: center center;
+    background-color: white;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
     /* background-position: center top;*/ 
 }
 
@@ -406,10 +406,10 @@ dd {
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain;
   position: relative;
   height: 600px;
 }
