@@ -406,10 +406,10 @@ dd {
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: top center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  -o-background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
   position: relative;
   height: 600px;
 }
