@@ -1,0 +1,41 @@
+---
+layout: info
+title: La Festa
+billboard_class: billboard-stairs
+---
+{% for event in site.events %}
+  <section class="container content-section {% cycle 'text-left', 'text-right' %}">
+    <div class="row">
+      <div class="col-lg-7 col-lg-offset-{% cycle 2, 3 %} col-sm-offset-2 col-sm-8">
+        <h2>
+          {{ event.name }}
+          <br>
+          <small>
+            {{ event.date }} | {{ event.time }}
+          </small>
+        </h2>
+
+        <div class="row">
+          <address class="col-xs-8 text-left">
+            <strong>{{ event.location_name }}</strong><br>
+            <a href="{{ event.google_maps_url }}">
+              {{ event.address1 }}<br>
+              {{ event.address2 }}<br>
+            </a>
+          </address>
+        </div>
+
+        <p>{{ event.description }}</p>
+        
+        {% if event.transportation %}
+          <p><em>{{ event.transportation }}</em></p>
+        {% endif %}
+
+        {% if event.shuttle %}
+          <p><em>{{ event.shuttle }}</em></p>
+        {% endif %}
+
+      </div>
+    </div>
+  </section>
+{% endfor %}

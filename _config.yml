@@ -1,0 +1,36 @@
+# Site settings
+title: Marco & Mariangela
+email: nonvedoloradiesserci@marcoemary.it
+url: http://www.marcoemary.it
+description: "Ci sposiamo!"
+baseurl: ""
+host: 0.0.0.0 # listen to LAN connections
+gems:
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+locations:
+  borgo_ducale: &borgo_ducale_location
+    location_name: Borgo Ducale
+    address1: Contrada Trullo, 5
+    address2: 72100, Tuturano, Brindisi
+    coordinates: 40.555489, 18.000264
+    google_maps_url: https://www.google.com/maps/place/Borgo+Ducale+-+Sala+Ricevimenti+Matrimonio+e+Cerimonie/@40.5549516,17.9986333,15z/data=!4m12!1m6!3m5!1s0x0:0x4e5d5c952b9bf441!2sBorgo+Ducale+-+Sala+Ricevimenti+Matrimonio+e+Cerimonie!8m2!3d40.5549516!4d17.9986333!3m4!1s0x0:0x4e5d5c952b9bf441!8m2!3d40.5549516!4d17.9986333
+
+events:
+    - name: Celebrazione e Ricevimento
+      date: Domenica, 1 Agosto, 2021
+      time: 5pm
+      description: Gli sposi vi aspettano a Borgo Ducale alle 17.30. La cerimonia e il ricevimento saranno nello stesso luogo. <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MThwcnJjZHJnMHJicnVqaDVvczI5b21maWggbS5mb3JuYXJvNkBt&amp;tmsrc=m.fornaro6%40gmail.com">Aggiungi al calendario.</a>
+      transportation: Per raggiungere la sala ricevimenti gli sposi mettono a disposizione un pullman. Raduno in zona S. Maria Goretti, Crispiano, alle ore 15.30. <strong>E' necessaria una conferma entro il 25/06.</strong> <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NDE3YW5nb3FsNDI3NGQ0cWdhcDhhMmV2aDYgbS5mb3JuYXJvNkBt&amp;tmsrc=m.fornaro6%40gmail.com">Aggiungi al calenario</a>
+      <<: *borgo_ducale_location
+
+google:
+  key: AIzaSyA_3yycZEyJ3r0rIGZwCOWu0VwNBrrW3tw
+
+calendar:
+  ical: https://www.google.com/calendar/ical/baclig.com_fqi9g8u7mre0m4oaqj1p66608c%40group.calendar.google.com/public/basic.ics
+  google_id: baclig.com_fqi9g8u7mre0m4oaqj1p66608c@group.calendar.google.com
